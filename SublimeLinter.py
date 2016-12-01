@@ -58,6 +58,7 @@ ALL_SETTINGS = [
     'jslint_options',
     'pep8',
     'pep8_ignore',
+    'pep8_max_line_length',
     'perl_linter',
     'pyflakes_ignore',
     'pyflakes_ignore_import_*',

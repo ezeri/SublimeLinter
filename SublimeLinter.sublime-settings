@@ -10,7 +10,7 @@
         "load-save" - Linting occurs only when a file is loaded and saved (the default).
         "save-only" - Linting occurs only when a file is saved.
     */
-    "sublimelinter": "load-save",
+    "sublimelinter": true,
 
     /*
         Maps language names **as listed at the beginning of the README** (but all lowercase)
@@ -70,7 +70,7 @@
         outline boxes around the lines, "fill" fills the lines with the outline color,
         and "none" (default) disables all outline styles.
     */
-    "sublimelinter_mark_style": "none",
+    "sublimelinter_mark_style": "outline",
 
     /*
         If true, lines with errors or warnings will be filled in with the
@@ -182,6 +182,10 @@
 
     // Set this to false to turn pep8 checking off completely
     "pep8": true,
+    
+    // Define maximum line length for pep8
+    "pep8_max_line_length": 120,
+    
 
     /*
         A list of pep8 error numbers to ignore. By default "line too long" errors are ignored.
@@ -190,8 +194,10 @@
     */
     "pep8_ignore":
     [
-        "E501"
+        // "E501"
     ],
+
+
 
     /*
         If you use SublimeLinter for pyflakes checks, you can ignore some of the "undefined name xxx"
