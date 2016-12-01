@@ -10,7 +10,7 @@
         "load-save" - Linting occurs only when a file is loaded and saved (the default).
         "save-only" - Linting occurs only when a file is saved.
     */
-    "sublimelinter": true,
+    "sublimelinter": false,
 
     /*
         Maps language names **as listed at the beginning of the README** (but all lowercase)
@@ -183,7 +183,11 @@
     // Set this to false to turn pep8 checking off completely
     "pep8": true,
     
-    // Define maximum line length for pep8
+    /*  Define maximum line length for pep8
+        pep8 considers that the standard length of 80 is actually 79 characters.
+        SublimeLinter will automatically adapt the number if a multiple of 10 is given.
+        ie. Putting "80" will actually be interpreted as "79"
+    */
     "pep8_max_line_length": 120,
     
 
